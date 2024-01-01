@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Image/favicon.ico" type="image/x-icon">
+        <!-- font awsome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.
+        min.css"/>
+        <!-- bootstrap cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap-grid.min.css">
+    
+        
+        <!-- <link rel="stylesheet" href="Css/style.css"> -->
+        <link rel="stylesheet" href="Css/c.css">
+    
+        <title>Amdehun General Trading </title>
+    </head>
+<body>
+         <!-- header start here -->
+         <header>
+            <a href="index.html" class="logo"> <img src="Image/logo.jpg" alt=""></a>
+                <div class="navbar">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#Product">Products</a>
+                    <a href="#Real-Estate">Real Estate</a>
+                    <a href="#about">About us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-bars" id="menu-bars"></i>
+                </div>
+    
+          </header>
+    <!-- header End here -->
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="Image/image/G+ 2.jpg" width="100%" id="mainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="Image/image/G+ 2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Image/image/G++1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="Image/image/G+1.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h3 class="sub-heading">G+1 Villa Real Estate</h3>
+            <h1 class="heading">Real Estate Deatils</h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis error magni. Praesentium iste voluptas, aperiam, eveniet laudantium, eum necessitatibus doloribus accusamus ut magni vel animi quod quis repellendus quidem.</span>
+            <ul style="list-style-type:circle">
+                <li>plot area = 250.13 sq.m</li>
+                <li>5 bed room</li>
+                <li>Dining and living room</li>
+                <li>2 bath</li>
+                <li>car port</li>
+                <li>traditional kitchen</li>
+            </ul>
+        </div>
+        
+    </section>
+
+
+
+
+    <!-- Footer section start here -->
+<footer class="footer">
+    <div class="box-container">
+        <div class="credit">
+            Amdehun General Trading @ 2023.<span> All Rights Reserved. </span>
+        </div>
+
+    </div>
+   
+</footer>
+<!-- Footer section Ends here -->
+
+<script>
+    const main=document.getElementById("#mainImg");
+    const smallimg=document.getElementsByClassName(".small-img");
+
+
+smallimg[0].onClick=()=>{
+    main.src = smallimg[0].src;
+}
+smallimg[1].onClick=()=>{
+    main.src = smallimg[1].src;
+}
+smallimg[2].onClick=()=>{
+    main.src = smallimg[2].src;
+}
+</script>
+
+<script src="Js/main.js" ></script>
+
+</body>
+</html>

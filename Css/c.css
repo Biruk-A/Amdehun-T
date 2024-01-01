@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,700;1,6..12,600&display=swap');
+    :root{
+       --green:#27ae65;
+       --black:#192a56;
+       --light-color:#666;
+       --box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+
+    }
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+img{
+    max-width: 100%;
+}
+.logo img{
+    width: 100px;
+    width: 100px;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* scroll-padding-top: 5.5rem; */
+    scroll-behavior: smooth;                        
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 2rem;
+}
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+#error{
+    width: 100%;
+    padding: 0px;
+    background-color: #fe8b8e;
+    transition: all 0.5s;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+header{
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    background: #fff;
+    padding: 1rem 7%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow); 
+    background-color: #fff;
+}
+section{
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background: #eee;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .7rem 1.5rem;
+    color: var(--light-color);
+}
+header .navbar .active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+    scale: 1.05;
+}
+header .icons i
+{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+header .icons i:hover{
+    color: #fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+header #menu-bars{
+    display: none;
+}
+
+
+/* Products style start here */
+.Products{
+    margin-top: 100px;
+    height: 120rem;
+}
+/* .sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 5rem; 
+     padding-top: 2rem;
+} */
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 4rem; 
+     padding-top: 2rem;
+}
+.Products .heading{
+    text-decoration: underline;
+}
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+.Products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: .85rem;
+}
+.Products .box-container .box{
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+     
+}
+.Products .box-container .box:hover{
+scale:1.05;
+}
+.Products .box-container .box .fa-heart,
+.Products .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.Products .box-container .box .fa-heart{
+    left: 2rem;
+}
+/* .Products .box-container .box .fa-eye{
+    left: -15rem;
+} */
+.Products .box-container .box .fa-heart:hover,
+.Products .box-container .box .fa-eye:hover{
+background: var(--green);
+color: #fff;   
+}
+.Products .box-container .box .fa-heart{
+    right: 1.5rem;
+} 
+ .Products .box-container .box .fa-eye{
+    left: 1.5rem;
+}
+.Products .box-container .box img{
+    height: 20rem;
+    margin: 1rem 1rem;
+}
+.Products .box-container .box h3{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+.Products .box-container .box .stars{
+padding: 1rem 0;
+}
+.Products .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: var(--green);
+}
+.Products .box-container .box span{
+    color: var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
+/* Products style ends here */
+
+
+/* facility css starts here */
+.Real-Estate{
+    min-height: 100vh;
+    margin-top: 5rem; 
+}
+.Real-Estate .box .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom:3rem;
+}
+.Real-Estate .box{
+    height: 250px;
+    width: 400px;
+    margin: .5rem;
+    overflow: hidden;
+}
+.Real-Estate .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: .85rem;
+}
+
+.Real-Estate .box-container .box {
+    height: 100%;
+    width: 100%;
+    padding: 4.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    /* box-shadow: var(--box-shadow); */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    /* height: 100%;
+    width: 100%;
+    object-fit: cover; */
+}
+
+.Real-Estate .box-container .box  img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+    
+    }
+.Real-Estate .container{
+    position: absolute;
+    top: 100rem;
+    left: 9rem;  
+}
+
+.Real-Estate .box-container .box:hover {
+    scale:1.05;
+}
+/* facility css ends here */
+
+/* about css start */
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.about .row .image{ 
+    position: relative;
+    height: 300px;
+    width: 300px; 
+    /* flex: 1 1 45rem; */
+}  
+.about .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about .row .content{
+    flex: 1 1 45rem; 
+}
+.about .row .content h3{
+    color: var(--black);
+    font-size: 4rem;
+    padding: .5rem 0;
+}
+.about .row .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+}
+.about .row marquee{
+    background-color: #ccc;
+    font-size: 20px;
+    font-family: 'Nunito',sans-serif;
+    color: var(--black);
+    width: 100%;
+}
+
+
+
+.about .row .content .icons-container .icons img{
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+    
+}
+.about .row .content .icons-container{
+ display: flex;
+ gap: 1rem;
+ flex-wrap: wrap;
+ padding: 1rem 0;
+ margin-top: .5rem;   
+}
+.about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    flex: .2 .2 16rem;
+    padding: .1rem .1rem;
+}
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color: var(--green);
+}
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color: var(--black);
+    gap: .2rem;
+}
+/* about css end */
+
+/* contact css start */
+footer{
+    padding: 2rem 8%;
+}
+.contact .contact-detaile .detaile{
+    /* margin-top: -100px; */
+    line-height: 20px;
+}
+.contact .contact-detaile .detaile span{
+    font-size: 18px;
+    color: var(--black);
+    font-weight: bold;
+  
+    
+}
+.contact .contact-detaile .detaile h2{
+    font-size: 20px;
+    /* line-height: 35px; */
+    padding: 20px 0;
+}
+.contact .contact-detaile .detaile h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.contact .contact-detaile .detaile li{
+list-style: none;
+display: flex;
+padding: 10px 0;
+}
+.contact .contact-detaile .detaile i{
+font-size: 14px;
+padding-right: 22px;
+}
+.contact .contact-detaile .detaile p{
+    margin: 0;
+    font-size: 14px;
+    }
+.contact .contact-detaile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-detaile .detaile{
+    width: 50%;
+    margin-right: 20px;
+}
+.contact-detaile .map{
+    width: 50%;
+    height: 400px;
+   padding-top: 20px;
+}
+.contact-detaile .map iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact  .user-meanu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    
+}
+.contact form {
+    max-width: 60rem;
+    width: 45rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0,0,0,.2);
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+.contact form .inputbox{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact form .inputbox .input{
+    width: 100%;
+}
+.contact form .inputbox .input span{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+.contact form .inputbox .input input,
+.contact form .inputbox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: .1rem solid rgba(0,0,0,.2);
+}
+.contact form .inputbox .input textarea{
+    height: 15rem;
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 0;
+}
+.contact form .inputbox .input input:focus,
+.contact form .inputbox .input textarea:focus{
+    border: .18rem solid var(--green);
+}
+.contact .user-meanu .people{
+    margin-top: -80px;
+}
+.contact .user-meanu .people div{
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact .user-meanu .people img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.contact .user-meanu .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+.contact .user-meanu .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.contact .user-meanu .people div p span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* contact css end */
+
+/* footer css end */
+.footer{
+    background: #eee;
+    height: 150px;
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: .2rem;
+    padding-top: 5rem;
+    margin-top: 2rem;
+}
+.footer .credit:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer .credit span{
+    color: var(--green);
+}
+/* footer css end */
+
+#prodetails{
+    display: flex;
+    margin-top: 40px;
+    padding-top: 100px;
+}
+#prodetails .single-pro-image{
+    width: 35%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  
+}
+.small-img-col{
+ flex-basis: 32%;
+ cursor: pointer;
+  height: 50%;
+  width: 50%;
+ 
+}
+.small-img-col img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details span{
+   line-height: 25px;
+   font-size: 15px;
+}
+#prodetails .single-pro-details ul{
+    line-height: 25px;
+    font-size: 15px;
+    margin-left: 25px;
+    padding-top: 10px;
+ }
+#prodetails .single-pro-details p{
+    line-height: 25px;
+    font-size: 15px;
+ }
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+   
+}
+@media(max-width:750px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background: #fff;
+        border-top: 1rem solid rgba(0,0,0,.2);
+        border-bottom: 1rem solid rgba(0,0,0,.2);
+        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0 ,100% 100%,  0% 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+    .contact .contact-detaile{
+    display: block;
+    width: 100%;
+   }
+   .contact .user-meanu{
+    display: block;
+    width: 100%;
+   }
+   .contact .user-meanu .people{
+    margin-top: 20px;
+}
+.contact form{
+    width: 100%;
+}
+.contact-detaile .map{
+    width: 100%;
+    height: 400px;
+   padding-top: 20px;
+}
+.Products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14.2rem, 1fr));
+    gap: .85rem;
+}
+.contact-detaile .detaile{
+    width: 100%;
+    margin-right: 20px;
+}
+.Real-Estate{
+    margin-top: 100rem;
+}
+.footer{
+    font-size: 15px;
+}
+}
+
